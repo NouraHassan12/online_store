@@ -49,9 +49,9 @@ function Products({ fetchProducts, productsData, addToCart }) {
         "https://res.cloudinary.com/dhdsghlmj/image/upload/v1654015490/online_store/product6_sffhcz.png",
     },
   ];
-  // useEffect(() => {
-  //   fetchProducts();
-  // }, []);
+  useEffect(() => {
+    fetchProducts();
+  }, []);
   const handleAddToCart = (product) => {
     addToCart(product);
   };

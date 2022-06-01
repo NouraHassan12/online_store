@@ -1,0 +1,144 @@
+.home {
+  padding: 56px 0 32px;
+}
+.home__container {
+  position: relative;
+  row-gap: 32px;
+}
+.container {
+  max-width: 968px;
+  margin: 0px 24px;
+}
+.grid {
+  display: grid;
+}
+.home__img {
+  width: 200px;
+  justify-self: center;
+}
+h1 {
+  color: #252826;
+  font-weight: 600;
+}
+.home__title {
+  font-size: 50px;
+  line-height: 140%;
+  margin-bottom: 16px;
+  font-weight: 700;
+  letter-spacing: -1px;
+}
+.home__description {
+  margin-bottom: 40px;
+}
+
+a {
+  text-decoration: none;
+}
+.button {
+  display: inline-block;
+  background-color: #3e6553;
+  color: #fff;
+  padding: 16px 28px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: 0.3s;
+}
+.button--flex {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 8px;
+}
+.home__social {
+  position: absolute;
+  top: 32px;
+  right: -16px;
+  display: grid;
+  justify-items: center;
+  row-gap: 56px;
+}
+.home__social-follow {
+  transform: rotate(90deg);
+  position: relative;
+  font-weight: 500;
+  font-size: 12px;
+}
+.home__social-follow::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: -45%;
+  width: 16px;
+  height: 2px;
+  background-color: #3e6553;
+}
+.home__social-links {
+  display: inline-flex;
+  flex-direction: column;
+  row-gap: 4px;
+}
+.home__social-link {
+  font-size: 16px;
+  color: #3e6553;
+  transition: 0.3s;
+}
+
+.home__social-link:hover {
+  transform: translateX(4px);
+}
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .home__img {
+    width: 180px;
+  }
+  .home__title {
+    font-size: 24px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .home {
+    padding: 160px 0 80px;
+  }
+  .home__container {
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .home__img {
+    width: 280px;
+    order: 1;
+  }
+  .home__social {
+    top: 30%;
+  }
+}
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .home {
+    padding: 208px 0 80px;
+  }
+  .home__img {
+    width: 350px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .home__social {
+    right: -48px;
+    row-gap: 72px;
+  }
+  .home__social-follow {
+    font-size: 14px;
+  }
+  .home__social-follow::after {
+    width: 24px;
+    right: -60%;
+  }
+  .home__social-link {
+    font-size: 18.4px;
+  }
+}

@@ -1,0 +1,92 @@
+.section {
+  padding: 88px 0 16px;
+}
+.container {
+  max-width: 968px;
+  margin: 0px 24px;
+}
+.steps__container {
+  gap: 32px;
+  padding-top: 16px;
+}
+.grid {
+  display: grid;
+}
+
+.steps__title {
+  color: #fff;
+}
+.section__title-center {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 32px;
+  line-height: 140%;
+}
+.steps__bg {
+  background-color: #365949;
+  padding: 48px 32px 32px;
+  border-radius: 16px;
+}
+.steps__card {
+  background-color: #fff;
+  padding: 40px 48px 32px 24px;
+  border-radius: 16px;
+}
+
+.steps__card-number {
+  display: inline-block;
+  background-color: #365949;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 20px;
+  margin-bottom: 24px;
+  transition: 0.3s;
+}
+.steps__card-title {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+.steps__card-description {
+  font-size: 14px;
+}
+.steps__card:hover .steps__card-number {
+  transform: translateY(-4px);
+}
+@media screen and (min-width: 992px) {
+  .container {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .section {
+    padding: 128px 0 16px;
+  }
+  .steps__container {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+
+  .section__title-center {
+    font-size: 36px;
+  }
+  .steps__card-title {
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 576px) {
+  .steps__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media screen and (max-width: 320px) {
+  .container {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+
+  .steps__bg {
+    padding: 32px 16px;
+  }
+  .steps__card {
+    padding: 24px;
+  }
+}

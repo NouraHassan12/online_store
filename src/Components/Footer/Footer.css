@@ -1,0 +1,131 @@
+.section__title,
+.section__title-center {
+  font-size: 30px;
+  margin-bottom: 32px;
+  line-height: 140%;
+}
+
+.section__title-center {
+  text-align: center;
+}
+
+.footer__container {
+  row-gap: 48px;
+}
+.footer__logo {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 8px;
+  color: #252826;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: -1px;
+  margin-bottom: 40px;
+  transition: 0.3s;
+}
+
+.footer__logo-icon {
+  font-size: 18.4px;
+  color: #3e6553;
+}
+
+.footer__logo:hover {
+  color: #3e6553;
+}
+.footer__title {
+  font-size: 25px;
+  margin-bottom: 24px;
+}
+
+.footer__subscribe {
+  background-color: #e6efeb;
+  padding: 12px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 8px;
+}
+
+.footer__input {
+  width: 70%;
+  padding: 0 8px;
+  background: none;
+  color: #565d59;
+  border: none;
+  outline: none;
+}
+
+.footer__button {
+  padding: 16px;
+}
+
+.footer__data {
+  display: grid;
+  row-gap: 12px;
+}
+
+.footer__information {
+  font-size: 18px;
+}
+
+.footer__social {
+  display: inline-flex;
+  column-gap: 12px;
+}
+
+.footer__social-link {
+  font-size: 16px;
+  color: #565d59;
+  transition: 0.3s;
+}
+
+.footer__social-link:hover {
+  transform: translateY(-4px);
+}
+
+.footer__cards {
+  display: inline-flex;
+  align-items: center;
+  column-gap: 8px;
+}
+
+.footer__card {
+  width: 35px;
+}
+
+.footer__copy {
+  text-align: center;
+  font-size: 13px;
+  color: #88918d;
+  margin: 80px 0 16px;
+}
+h3 {
+  font-weight: 600;
+  color: #252826;
+}
+@media screen and (min-width: 576px) {
+  .footer__subscribe {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 767px) {
+  .footer__container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .footer__container {
+    column-gap: 48px;
+  }
+  .footer__subscribe {
+    width: initial;
+  }
+}
+@media screen and (min-width: 992px) {
+  .footer__logo {
+    font-size: 16px;
+  }
+  .footer__container {
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr;
+  }
+  .footer__copy {
+    margin: 112px 0 32px;
+  }
+}

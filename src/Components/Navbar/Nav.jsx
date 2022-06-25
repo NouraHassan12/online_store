@@ -3,6 +3,7 @@ import Cart from "../Cart/Cart";
 import "./Nav.css";
 import { connect } from "react-redux";
 import { getTotals } from "../../Redux/Cart/cart";
+import { HashLink } from "react-router-hash-link";
 
 function Nav({ CartData, getTotals }) {
   const [showMenu, setShowMenu] = useState(false);
@@ -51,53 +52,59 @@ function Nav({ CartData, getTotals }) {
           <ul className="nav__list">
             <li>
               {" "}
-              <a
-                href="#home"
-                className="nav__link  active-link"
-                onClick={handlehideSideMenu}
-              >
-                Home
-              </a>
-            </li>
-            <li className="nav__link">
-              {" "}
-              <a
-                href="#about"
+              <HashLink
+                smooth
+                to="/#home"
                 className="nav__link"
                 onClick={handlehideSideMenu}
               >
-                About
-              </a>
+                Home
+              </HashLink>
             </li>
             <li className="nav__link">
               {" "}
-              <a
-                href="#Products"
+              <HashLink
+                smooth
+                to="/#about"
+                className="nav__link"
+                onClick={handlehideSideMenu}
+              >
+                {" "}
+                about{" "}
+              </HashLink>
+            </li>
+            <li className="nav__link">
+              {" "}
+              <HashLink
+                smooth
+                to="/#products"
                 className="nav__link"
                 onClick={handlehideSideMenu}
               >
                 Products
-              </a>
+              </HashLink>
             </li>
             <li className="nav__link">
               {" "}
-              <a
-                href="#FAQs"
+              <HashLink
+                smooth
+                to="/#FAQs"
                 className="nav__link"
                 onClick={handlehideSideMenu}
               >
                 FAQs
-              </a>
+              </HashLink>
             </li>
             <li className="nav__link">
               {" "}
-              <a
-                href="#Contacts"
+              <HashLink
+                smooth
+                to="/#contactUs"
                 className="nav__link"
                 onClick={handlehideSideMenu}
               >
                 Contacts
-              </a>
+              </HashLink>
             </li>
           </ul>
           <div className="nav__close" id="nav-close" onClick={handleCloseMenu}>

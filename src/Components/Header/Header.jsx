@@ -4,7 +4,7 @@ import Home from "../../assets/Images/home.png";
 
 function Header() {
   return (
-    <section className="home">
+    <section className="home" id="home">
       <div className="home__container container grid">
         <img src={Home} alt="" className="home__img" />
 

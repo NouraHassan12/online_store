@@ -4,7 +4,7 @@ import "./About.css";
 
 function About() {
   return (
-    <section className="section container">
+    <section className="section container" id="about">
       <div className="about__container grid">
         <img src={about} alt="" className="about__img" />
         <div>

@@ -56,7 +56,7 @@ function Products({ fetchProducts, productsData, addToCart }) {
     addToCart(product);
   };
   return (
-    <section className="product section container">
+    <section className="product section container" id="products">
       <h2 className="section__title-center">Check out our products</h2>
 
       <p className="product__description">

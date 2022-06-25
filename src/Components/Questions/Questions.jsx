@@ -1,31 +1,49 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Questions.css";
 
 function Questions() {
   const questions = [
     {
+      id: 1,
       question__title: "My flowers are falling off or dying?",
+      question__description:
+        " Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.",
     },
 
     {
+      id: 2,
       question__title: "My flowers are falling off or dying?",
+      question__description:
+        " Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.",
     },
 
     {
+      id: 3,
       question__title: "My flowers are falling off or dying?",
+      question__description:
+        " Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.",
     },
     {
+      id: 4,
       question__title: "My flowers are falling off or dying?",
+      question__description:
+        " Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.",
     },
     {
+      id: 5,
       question__title: "My flowers are falling off or dying?",
+      question__description:
+        " Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.",
     },
     {
+      id: 6,
       question__title: "My flowers are falling off or dying?",
+      question__description:
+        " Plants are easy way to add color energy and transform your space but which planet is for you. Choosing the right plant.",
     },
   ];
   return (
-    <section className="questions section">
+    <section className="questions section" id="FAQs">
       <h2 className="section__title-center questions__title container">
         Some common questions <br />
         were often asked
